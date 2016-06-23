@@ -1,8 +1,8 @@
-var positive = ['hi', 'smile', 'beautiful', 'pretty', 'good', 'hello', 'job',
+var positive = ['smile', 'beautiful', 'pretty', 'good', 'hello', 'job',
     'cute', 'life', 'together', 'kind' , 'love'];
 var negative = ['fuck', 'shit', 'dick', 'angry', 'ugly', 'fat', 'hard', 'clumsy', 'insane', 'stupid'];
 var categories = [positive, negative];
-var cnames = ['positive', 'negative'];
+var cnames = ['positive', 'sleep'];
 
 function getCategory(string) {
     var str = string.split(' ');
@@ -41,7 +41,9 @@ $('#bottom').on('input', function() {
 
 $('#generate').on('click', function() {
     var str = $('#top-content').html() + ' ' + $('#bottom-content').html();
-    console.log(getCategory(str));
+    var cat = getCategory(str);
+    var img = '/img/' + cat + '.jpg';
+    $('#image').attr('src', img);
     $('#st-control-3').click();
 });
 
