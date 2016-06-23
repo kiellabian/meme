@@ -1,6 +1,6 @@
 var positive = ['hi', 'smile', 'beautiful', 'pretty', 'good', 'hello', 'job',
-    'cute'];
-var negative = ['fuck', 'shit', 'dick', 'angry', 'ugly', 'fat', 'hard'];
+    'cute', 'life', 'self', 'smile', 'together', 'kind' , 'love'];
+var negative = ['fuck', 'shit', 'dick', 'angry', 'ugly', 'fat', 'hard', 'clumsy', 'insane', 'stupid'];
 var categories = [positive, negative];
 var cnames = ['positive', 'negative'];
 

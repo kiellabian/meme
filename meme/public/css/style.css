@@ -8,16 +8,18 @@
 
 .form-generate-button {
 	position: relative;
-	top: -175px;
+	top: 175px;
     left: 1191px;
 }
 
 #top-content {
 	padding-top: 276px !important;
+	text-transform: uppercase;
 }
 
 #bottom-content {
 	padding-top: 837px !important;
+	text-transform: uppercase;
 }
 
 #meme {
