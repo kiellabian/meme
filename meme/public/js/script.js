@@ -1,12 +1,15 @@
+var sleep = ['night', 'zzz', 'snore', 'sleep'];
+var eman = ['cleavage', 'horny', 'hunk', 'shame', 'funny'];
 var positive = ['smile', 'beautiful', 'pretty', 'good', 'hello', 'job',
-    'cute', 'life', 'together', 'kind' , 'love'];
-var negative = ['fuck', 'shit', 'dick', 'angry', 'ugly', 'fat', 'hard', 'clumsy', 'insane', 'stupid'];
-var categories = [positive, negative];
-var cnames = ['positive', 'negative'];
+    'cute', 'life', 'together', 'kind' , 'love', 'handsome'];
+var negative = ['fuck', 'shit', 'dick', 'angry', 'ugly', 'fat', 'hard',
+	'clumsy', 'insane', 'stupid', 'mad', 'kill'];
+var categories = [sleep, eman, positive, negative];
+var cnames = ['sleep', 'eman', 'positive', 'negative'];
 
 function getCategory(string) {
     var str = string.split(' ');
-    var points = [0, 0];
+    var points = [0, 0, 0, 0];
     for (var i = 0; i < categories.length; i++) {
         var category = categories[i];
         for (var j = 0; j < str.length; j++) {

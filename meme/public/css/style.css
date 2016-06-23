@@ -7,9 +7,9 @@
 }
 
 .form-generate-button {
-	position: relative;
-	top: 175px;
-    left: 1191px;
+	position: absolute;
+	top: 197px;
+    left: 1382px;
 }
 
 #top-content {
