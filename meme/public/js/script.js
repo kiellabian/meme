@@ -5,9 +5,29 @@ var categories = [positive, negative];
 var cnames = ['positive', 'negative'];
 
 function getCategory(string) {
+    var str = string.split(' ');
+    var points = [0, 0];
     for (var i = 0; i < categories.length; i++) {
         var category = categories[i];
+        for (var j = 0; j < str.length; j++) {
+            var s = str[j];
+            for (var k = 0; k < category.length; k++) {
+                var cat = category[k];
+                if (s.indexOf(cat) >= 0) {
+                    points[i]++;
+                }
+            }
+        }
     }
+
+    var top = 0;
+    for (var l = 1; l < points.length; l++) {
+        if (points[top] <= points[l]) {
+            top = l;
+        }
+    }
+
+    return cnames[top];
 }
 
 
@@ -21,5 +41,5 @@ $('#bottom').on('input', function() {
 
 $('#generate').on('click', function() {
     var str = $('#top-content').html() + ' ' + $('#bottom-content').html();
-    str = str.trim();
+    console.log(getCategory(str));
 });
