@@ -2,7 +2,7 @@ var positive = ['smile', 'beautiful', 'pretty', 'good', 'hello', 'job',
     'cute', 'life', 'together', 'kind' , 'love'];
 var negative = ['fuck', 'shit', 'dick', 'angry', 'ugly', 'fat', 'hard', 'clumsy', 'insane', 'stupid'];
 var categories = [positive, negative];
-var cnames = ['positive', 'sleep'];
+var cnames = ['positive', 'negative'];
 
 function getCategory(string) {
     var str = string.split(' ');
