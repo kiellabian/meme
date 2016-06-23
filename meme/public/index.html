@@ -22,9 +22,6 @@
 				<a href="#st-panel-3">Generated Meme</a>
 				
 				<div class="st-scroll">
-				
-					<!-- Placeholder text from http://hipsteripsum.me/ -->
-					
 					<section class="st-panel" id="st-panel-1">
 						<div class="st-deco" data-icon="H"></div>
 						<h2>MEME GENERATOR (WITH NOOOODE)</h2>
@@ -33,10 +30,14 @@
 					
 					<section class="st-panel st-color" id="st-panel-2">
 						<div class="st-deco" data-icon="2"></div>
-						<h2>Generate Meme</h2>
+						<h2 style="margin-top:15px;">Generate Meme</h2>
 						<div class="container meme-generator">
 							<div class="row">
 								<form role="form" class="col-md-11 go-right">
+									<div class="alert alert-danger">
+										<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+										<span><strong>Error</strong> Please input something.</span>
+									</div>
 									<div class="form-group">
 										<input id="top" name="name" type="text" class="form-control" required>
 										<label for="name">Top Caption</label>
