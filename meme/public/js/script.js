@@ -1,5 +1,5 @@
 var positive = ['hi', 'smile', 'beautiful', 'pretty', 'good', 'hello', 'job',
-    'cute', 'life', 'self', 'smile', 'together', 'kind' , 'love'];
+    'cute', 'life', 'together', 'kind' , 'love'];
 var negative = ['fuck', 'shit', 'dick', 'angry', 'ugly', 'fat', 'hard', 'clumsy', 'insane', 'stupid'];
 var categories = [positive, negative];
 var cnames = ['positive', 'negative'];
@@ -42,4 +42,13 @@ $('#bottom').on('input', function() {
 $('#generate').on('click', function() {
     var str = $('#top-content').html() + ' ' + $('#bottom-content').html();
     console.log(getCategory(str));
+    $('#st-control-3').click();
+});
+
+$('#generate-again').on('click', function() {
+	$('#top').val('');
+	$('#bottom').val('');
+	$('#top-content').html('');
+	$('#bottom-content').html('');
+    $('#st-control-2').click();
 });
