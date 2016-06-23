@@ -13,22 +13,30 @@
 }
 
 #top-content {
-	padding-top: 276px !important;
+	margin-top: -289px;
 	text-transform: uppercase;
 }
 
 #bottom-content {
-	padding-top: 837px !important;
+	margin-top: 300px;
 	text-transform: uppercase;
 }
 
 #meme {
-  position: relative;
-  margin: 0 auto;
+  	width: 875px;
+    height: 660px;
+    margin: 195px auto;
 }
 
 #meme,img {
   width: 875px;
+  height: 666px;
+}
+
+.image-cover {
+	height: 666px;
+	object-fit: cover;
+	object-position: center center;
 }
 
 #meme h1 {
@@ -44,7 +52,6 @@
   color: #FFF;
   font-family: Impact;
   font-size: 68px;
-  padding-top: 203px;
   font-size: 30px;
 }
 
@@ -52,14 +59,12 @@
   color: #FFF;
   font-family: Impact;
   font-size: 50px;
-  padding-top: 713px;
   text-shadow: 5px 5px 0 #000;
   font-size: 30px;
 }
 
 #meme img {
   border: 10px solid #000;
-  margin: 195px auto;
   position: absolute;
 }
 
