@@ -9,11 +9,7 @@
         <link rel="shortcut icon" href="../favicon.ico"> 
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
-		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>  
-
+        <link rel="stylesheet" type="text/css" href="css/style.css" /> 
     </head>
     <body>
         <div class="container">
@@ -44,15 +40,15 @@
 							<div class="row">
 								<form role="form" class="col-md-11 go-right">
 									<div class="form-group">
-										<input id="name" name="name" type="text" class="form-control" required>
+										<input id="top" name="name" type="text" class="form-control" required>
 										<label for="name">Top Caption</label>
 									</div>
 									<div class="form-group">
-										<input id="phone" name="phone" type="tel" class="form-control" required>
+										<input id="bottom" name="phone" type="tel" class="form-control" required>
 										<label for="phone">Bottom Caption</label>
 									</div>
 									<div class="form-group">
-									 	<button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#myModal">GENERATE</button>
+									 	<button id="st-control-3" type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#myModal">GENERATE</button>
 									</div>
 								</form>
 							</div>
@@ -63,8 +59,8 @@
 						<div class="st-deco" data-icon="B"></div>
 						 <div id="meme">
 						 	<img src="https://stuff.webmaker.org/thimble-assets/serious_cat.jpg"> 
-						 	<h1>Top Caption</h1>
-						 	<h2>Bottom Caption</h2>
+						 	<h1 id="top-content"></h1>
+						 	<h2 id="bottom-content"></h2>
 						 </div>
 						 <form>
 						 	<div class="form-group form-generate-button">
@@ -75,5 +71,10 @@
 				</div>
 			</div>
         </div>
+
+        <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> 
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
